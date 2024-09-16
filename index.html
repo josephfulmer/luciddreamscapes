@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Lucid Dreaming E-Book</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('out-0.webp');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            text-align: center;
+            color: white;
+            padding-top: 100px;
+        }
+        .form-container {
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        input[type="email"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="email"] {
+            background-color: #ffffff90;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Free Lucid Dreaming E-Book!</h1>
+        <p>Enter your email below to get your free e-book.</p>
+        <div class="form-container">
+            <form action="https://formspree.io/f/xkgwakwq" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" value="Get Your Free E-Book!">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function (event) {
+            alert("Thank you! Your e-book is on the way.");
+        });
+    </script>
+</body>
+</html>
